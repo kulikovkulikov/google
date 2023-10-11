@@ -1,15 +1,20 @@
-print("Уравнение ax² + bx + c = 0")
-a = int(input("Введите a "))
-b = int(input("Введите b "))
-c = int(input("Введите c "))
-def quadrat_equasion(a, b, c):
-    D = b ** 2 - 4 * a * c
-    if D < 0:
-        print("У этого уравнения существуют только мнимые корни.")
+from math import sqrt
+
+def quadratic_equation(a, b, c):
+    d = b * b - 4 * a * c
+    if d < 0:
+        return []
     else:
-        x1 = (-b + D ** 0.5) / (2 * a)
-        x2 = (-b - D ** 0.5) / (2 * a)
-        if x1 == x2:
-            print(f"x1 = {x1}")
-        else:   
-            print(f"x1 = {x1}, x2 = {x2}")
+        if d == 0:
+            x = -b / (2 * a)
+            return [x]
+        else:
+            x_1 = (-b + sqrt(d)) / (2 * a)
+            x_2 = (-b + sqrt(d)) / (2 * a)
+            return [x_1, x_2]
+
+print("Определение корней уравнения ax² + bx + c = 0")
+a = int(input("Введите число a >>> "))
+b = int(input("Введите число b >>> "))
+c = int(input("Введите число c >>> "))
+print(quadratic_equation(a, b, c))
