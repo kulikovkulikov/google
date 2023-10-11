@@ -10,7 +10,7 @@ def quadratic_equation(a, b, c):
             return [x]
         else:
             x_1 = (-b + sqrt(d)) / (2 * a)
-            x_2 = (-b + sqrt(d)) / (2 * a)
+            x_2 = (-b - sqrt(d)) / (2 * a)
             return [x_1, x_2]
 
 print("Определение корней уравнения ax² + bx + c = 0")
