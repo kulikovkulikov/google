@@ -14,7 +14,7 @@ def quadratic_equation(a, b, c):
             return [x_1, x_2]
 
 print("Определение корней уравнения ax² + bx + c = 0")
-a = int(input("Введите число a >>> "))
-b = int(input("Введите число b >>> "))
-c = int(input("Введите число c >>> "))
+a = float(input("Введите число a >>> "))
+b = float(input("Введите число b >>> "))
+c = float(input("Введите число c >>> "))
 print(quadratic_equation(a, b, c))
