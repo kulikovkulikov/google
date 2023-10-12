@@ -1,7 +1,8 @@
 from math import sqrt
 
-def quadratic_equation(a, b, c):
-    d = b * b - 4 * a * c
+def solve_quadratic(a, b, c):
+    if(a == 0) 
+    d = b * b - 4 * a * c # Discriminant of quadratic equation
     if d < 0:
         return []
     else:
