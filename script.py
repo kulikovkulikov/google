@@ -11,13 +11,16 @@ def solve_quadratic(a, b, c):
         return [x_1, x_2]
 
 print('Определение корней уравнения ax² + bx + c = 0')
+
 a = float(input('Введите число a >>> '))
 b = float(input('Введите число b >>> '))
 c = float(input('Введите число c >>> '))
+
 x = solve_quadratic(a, b, c)
+
 if len(x) == 0:
     print('Нет действительных корней')
 elif len(x) == 1:
     print('x =', x[0])
 else:
-    print('x_1 = ', x[0], ', x_2 =', x[1], sep='')
+    print('x_1 = ', x[0], ', x_2 = ', x[1], sep='')
