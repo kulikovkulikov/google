@@ -1,6 +1,4 @@
 def solve_quadratic(a, b, c):
-    if(a == 0):
-        raise ZeroDivisionError
     d = b * b - 4 * a * c # Discriminant of quadratic equation
     if d < 0:
         return []
